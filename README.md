@@ -1,5 +1,5 @@
 # mySeckill
-##IDEA+maven+SSM 秒杀业务练习
+## IDEA+maven+SSM 秒杀业务练习
 
 ### 一、 pom文件编写
    1. 日志依赖 
