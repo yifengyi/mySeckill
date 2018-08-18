@@ -1,13 +1,13 @@
 package org.wujf.seckill.dao;
 
 import org.apache.ibatis.annotations.Param;
-import org.wujf.seckill.entity.Successkilled;
+import org.wujf.seckill.entity.SuccessKilled;
 
 /**
  * @author wujf
  * @version 1.0v  create in 17:52 2018-8-15
  */
-public interface SuccesskilledDao {
+public interface SuccessKilledDao {
 
     /**
      * 插入购买明细，可过滤重复
@@ -23,5 +23,5 @@ public interface SuccesskilledDao {
      * @param userPhone
      * @return
      */
-    Successkilled queryByIdWithSeckill(@Param("seckillId") long seckillId, @Param("userPhone") long userPhone);
+    SuccessKilled queryByIdWithSeckill(@Param("seckillId") long seckillId, @Param("userPhone") long userPhone);
 }
