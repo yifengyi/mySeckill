@@ -6,3 +6,4 @@
 <script src="${pageContext.request.contextPath}/static/ie/html5shiv.js"></script>
 <script src="${pageContext.request.contextPath}/static/ie/respond.js"></script>
 <![endif]-->
+<script src="${pageContext.request.contextPath}/paginator/bootstrap-paginator.js"></script>

@@ -14,4 +14,13 @@
         <!-- 开启自动驼峰命名规则（camel case）映射-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
+
+    <!--2 :配置MyBatis-pageHelper 分页插件 -->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!-- config params as the following -->
+            <property name="param1" value="value1"/>
+        </plugin>
+    </plugins>
+
 </configuration>

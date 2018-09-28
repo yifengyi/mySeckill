@@ -38,6 +38,20 @@
         <property name="dataSource" ref="dataSource"/>
         <!--mybatis 配置-->
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
+
+        <!--分页配置-->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <!-- config params as the following -->
+                        <value>
+                            param1=value1
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
         <!-- 扫描entity 包,多个用‘;’ 隔开-->
         <property name="typeAliasesPackage" value="org.wujf.seckill.entity"/>
         <!-- 扫描sql配置文件:mapper需要的xml文件-->
